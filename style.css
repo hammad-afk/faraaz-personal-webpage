@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 800px){
+  .navbar{
+    width: 200px;
+  }
+}
+
+
+.name {
+  padding: 50px 90px;
+  letter-spacing: 3px;
+}
+.ul {
+  display: flex;
+  padding: 75px;
+  align-items: flex-start;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.ul >.li {
+  list-style: none;
+  padding: 0 30px;
+  cursor: pointer;
+
+}
+.f-i{
+  position: absolute;
+  right: 150px;
+  width: 300px;
+  height:400px;
+  float: right;
+  top: 150px;
+  z-index: -1;
+  border-radius: 10px;
+  background: #2980B9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #FFFFFF, #93c5d7, #8cc0e4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.li:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.li:nth-child(3) {
+  transition-delay: 200ms;
+}
+
+.li:nth-child(4) {
+  transition-delay: 600ms;
+}
+
+.li:nth-child(5) {
+  transition-delay: 700ms;
+}
+
+
+#insta {
+  margin-top: -15px;
+}
+
+.mail {
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 0px;
+  border-radius: 10px;
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5px;
+  cursor: pointer;
+  border: none;
+  transition-delay: 0.2s;
+  transition-duration: 0.1s;
+}
+
+.mail:hover {
+  font-size: 16px;
+}
+#li-a{
+   transition: ease 100ms;
+} 
+#li-a:hover{
+border-bottom: 2px solid black;
+}
+#insta:hover {
+  animation-name: ckw;
+  animation-duration: 15.5s;
+  animation-name: ckw;
+  animation-duration: 15.5s;
+  /* Things added */
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  display: inline-block;
+}
+
+@keyframes ckw {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Here is your original animation css (I have removed prefixes to keep it simple):
+In #gear you should add:
+animation-iteration-count to infinite to keep it rolling
+transform-origin to center of your div 50% 50% to get gear rolling around itself
+display to inline-block */
+
+
+svg {
+  padding-right: 5px;
+  width: 20px;
+  height: 120px;
+}
+
+header {
+  padding: 50px 150px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.h-t {
+  word-spacing: 0px;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+.skill {
+  padding: 100px 150px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  padding: 10px;
+}
+
+#s-li {
+  color: #000;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border: 1px solid #ced1df;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 30px;
+  background-image: none;
+  background-size: auto;
+  letter-spacing: 1px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.skills>h1 {
+  padding-bottom: 20px;
+}
+
+.animation {
+  height: 50px;
+  overflow: hidden;
+}
+
+.animation>div {
+  font-size: 25px;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  height: 2.91rem;
+  margin-bottom: 2.81rem;
+  display: inline-block;
+  background-color: #20a7d8;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+  display: co;
+}
+
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.work {
+  padding: 150px;
+  width: 100%;
+  height: 500px;
+}
+
+.work>h1 {
+  padding-bottom: 40px;
+}
+.hw{
+  font-size: 8rem;
+  font-weight: 700;
+  font-family: 'Ubuntu', sans-serif;
+  position: absolute;
+  right: 9%;
+  top: 20%;
+  cursor: pointer;
+  color: transparent;
+  background: conic-gradient(
+    #D9d7f1 12%,
+    #BAABDA 12%, #BAABDA 33%,
+    #E7FBBE 33%, #E7FBBE 55%,
+    #FFBCBC 55%, #FFBCBC 70%,
+    #B5DEFF 70%, #B5DEFF 87%,
+    #F7D1BA 87%,
+  );
+  background-size: 50%;
+  -webkit-background-clip: text;
+  animation: expand-reverse 0.5s ease forwards;
+}
+.hw:hover{
+  animation: expand 0.5s ease forwards;
+}
+@keyframes expand {
+  0%{
+    background-size: 50%;
+    background-position: 0 0;
+  }
+  20%{
+    background-size: 55%;
+    background-position: 0 1em;
+  }
+  100%{
+    background-size: 325%;
+    background-position: -10em 4em;
+  }
+}
+
+
+@keyframes expand-reverse {
+  0%{
+    background-size: 325%;
+    background-position: -10em 4em;
+  }
+  20%{
+    background-size: 55%;
+    background-position: 0 1em;
+  }
+  100%{
+    background-size: 50%;
+    background-position: 0 0;
+  }
+}
